@@ -1,0 +1,52 @@
+.navbar{
+    padding-left: 125px;
+}
+.booking-card{
+    position: absolute;
+    top: 200px;
+    z-index: 2;
+}
+
+.card{
+    background: rgba(0, 0, 0, 0.8);
+    width: 1200px;
+    height: auto;
+    margin-left: 150px;
+    margin-right: 100px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.nav-tab{
+    background: rgba(0, 0, 0, 0.8);
+}
+.booking-link:hover, .booking-link:focus, .booking-link:active{
+    color: #ffa600 !important;
+    border: 1px solid #ffa600 !important;
+}
+
+.btn{
+    border-color: white;
+    background: transparent !important;
+    margin-top: 20px;
+}
+.availability-card{
+    padding: 30px 200px 50px 200px;
+}
+.checkout-card{
+    padding: 10px 50px;
+}
+.room-img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    padding-bottom: 20px;
+    filter: brightness(80%)
+}
+.col-sm, .col-lg{
+    margin-bottom: 20px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+    margin-left: 0px;
+}
+.room-info{
+    text-align: left;
+    padding: 10px 5px;
+}

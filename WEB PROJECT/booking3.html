@@ -1,0 +1,219 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> BOOKING </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+<!-- BOOTSRAP CSS -->
+        <link rel="stylesheet" href="newbootstrap/dist/css/bootstrap.min.css">
+<!-- CUSTOM CSS -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="booking_style.css">
+<!-- ---------------------------------------------- custom JS -------------------------------------------------- -->
+    </head>
+    
+    
+    <body>
+ <!-- ----------------------------------NAV BAR ------------------------------------------------------ -->       
+ <div class="navbar-wrapper">
+        <div class="navbar-container">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="img/A.png" alt="logo of resort" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="row bread-row">         
+                <nav aria-label="breadcrumb" role="navigation">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item" aria-current="page">Home</li>
+                    <li class="breadcrumb-item active" aria-current="page" style="color: #f39c12">Accomodation</li>
+                    <li style="padding-left: 750px; color: rgba(255, 255, 255, 0.7);"><a href="#" style="color: rgba(255, 255, 255, 0.6)">Contact</a></li>
+                    <li style="padding-left: 35px;"><a href="#" style="color: rgba(255, 255, 255, 0.6)">Media</a></li>
+                </ol>
+                </nav>
+                </div>
+              <div class="navbar-nav">
+                <div class="spacing" style>&nbsp;</div>
+                <div class="spacing" style>&nbsp;</div>                
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link active" href="accomodation.html">Accomodation<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="dining.html">Dining</a>
+                <a class="nav-item nav-link" href="spa&wellness.html">Spa & Wellness</a>
+                <a class="nav-item nav-link" href="events.html">Events</a>
+                <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+                <a class="nav-item nav-link" href="about.html">About</a>
+                <div class="spacing" style>&nbsp;</div>
+                <div class="spacing" style>&nbsp;</div>
+                
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+ <!-- ----------------------------------NAV BAR ------------------------------------------------------ --> 
+ <!---------------------------------------IMAGE-------------------------------------------------------- --> 
+        <div class="secondary-image" style="background-image: url('img/booking/banjo.jpg'); height: 1200px;"></div>
+        <div class="booking-card">
+            <div class="card text-center">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link booking-link" style="color:rgb(255, 255, 255); border-color: rgba(255, 255, 255, 0.8);" href="booking.html">Check Availability</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link booking-link" style="color:rgb(255, 255, 255); border-color: rgba(255, 255, 255, 0.8);" href="booking2.html">Rooms & Rates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link booking-link" style="color:rgb(255, 255, 255); border-color: rgba(255, 255, 255, 0.8); background-color: #bd893b;" href="booking3.html">Check out</a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="checkout-card">
+                        <form name="myForm" action="bookingForm.php" method="post">
+                            <div class="row">
+                            <div class="form-group col-md-4">
+                                <label class="col-form-label" for="firstName">First Name*</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name" name="firstName" required>
+                                <div id="nameAlert1"></div>
+                                
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label class="col-form-label" for="middleName">Middle Name</label>
+                                <input type="text" class="form-control" id="middleName" placeholder="Middle Name" name="middleName">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label class="col-form-label" for="lastName">Last Name*</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name" name="lastName" required >
+                                <div id="nameAlert2"></div>
+
+                            </div> 
+                            </div>
+                            <div class="row">
+                            <div class="form-group col-md-4">
+                                <label for="date">Date of Birth*</label>
+                                <input type="date" class="form-control" id="date" name="date" required>
+                                <div id="dateAlert"></div>
+                            </div>
+                            <div class="form-group col-md-8" style="padding-top: 35px;">
+                                Gender* &nbsp; &nbsp;
+                                <label class="custom-control custom-radio">
+                                    <input id="radio1" name="radio" type="radio" value="male" class="custom-control-input">
+                                    <span class="custom-control-indicator"></span>
+                                    <span class="custom-control-description">Male</span>
+                                </label>
+                                <label class="custom-control custom-radio">
+                                    <input id="radio2" name="radio" type="radio" value="female" class="custom-control-input">
+                                    <span class="custom-control-indicator"></span>
+                                    <span class="custom-control-description">Female</span>
+                                    <div id="genderAlert"></div>
+                                </label>
+                            </div>
+                            </div>
+                            <div class="row">       
+                            <div class="form-group col-md-4">
+                                <label for="email">Email*</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
+                                <div id="emailAlert"></div>
+                            </div>                
+                            <div class="form-group col-md-4">
+                                <label for="mobile">Mobile no:*</label>
+                                <input type="number" class="form-control" id="mobile" name="mobile" required>
+                                <div id="mobileAlert"></div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="landline">Landline no:</label>
+                                <input type="number" class="form-control" id="landline" name="landline">
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="form-group col-md-8">
+                                <label for="address1 address2">Address*</label>
+                                <input type="text" class="form-control" id="address1" placeholder="1234 Main St" name="address1" required>
+                                <input type="text" class="form-control" id="address2" placeholder="Apartment, studio, or floor" name="address2" required>
+                                <div id="addressAlert"></div>
+                            </div>
+                                <div class="form-group col-md-4">
+                                    <label for="city">City*</label>
+                                    <input type="text" class="form-control" id="city" name="city" required>
+                                    <div id="cityAlert"></div>
+                                </div>
+                            </div>
+                            <div class="row">  
+                                <div class="form-group col-md-4">
+                                    <label for="nationality">Nationality*</label>
+                                    <input type="text" class="form-control" id="nationality" name="nationality" required>
+                                    <div id="nationalityAlert"></div>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="state">State*</label>
+                                    <input type="text" class="form-control" id="state" name="_state" required>
+                                    <div id="stateAlert"></div>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="zip">Zip*</label>
+                                    <input type="number" class="form-control" id="zip" name="zip" required>
+                                    <div id="zipAlert"></div>
+                                </div>
+                            </div>
+                                
+                <!-- ---------------------------------------------------------------------------------------------booking policy checkbox -->
+                        <div class="form-check">
+                            <b>Booking Policy</b><br>Cancellations: Reservations cancelled 30 days prior to arrival will be charged 100% of the full stay.<br>
+                            Bookings: A deposit of total room stay is due at a time of booking.<br>
+                            <label class="form-check-label">
+                            <input class="form-check-input" id="tc-check" type="checkbox" value="1">
+                            Please specify that you have read and understood the rate policies for your itinerary. *
+                            </label>
+                        </div> 
+                        <input type="submit" class="btn btn-outline-warning" id="submit-button" name="submit-form" value="&nbsp;Proceed to pay&nbsp;" disabled>
+                        </div>
+                    </form>
+                </div>  
+                </div>
+            </div>
+        </div>
+ <!-- ------------------------------------BOOKING CARD------------------------------------------------------------ -->
+
+<!-- ------------------------------------Footer--------------------------------------------------------------- -->
+<footer class="main-footer">
+    <div class="container">
+      <div class="row">
+        <div class="logo-footer col-md-3">
+          <div class="p-2"><img src="img/A.png" alt="logo of resort" class="logo-img">
+          </div>
+        </div>
+        <div class="col">
+          <div class="d-flex flex-row">
+            <div class="p-2 ftext">STAY CONNECTED ON </div>
+            <div class="p-2 ftext"><img src="img/icons/fb.png" class="footer-icon" alt="facebook icon">&nbsp;<a class = "footer-link text-white" href="">FACEBOOK</a></div>
+            <div class="p-2 ftext"><img src="img/icons/ig.png" class="footer-icon" alt="facebook icon">&nbsp;<a class = "footer-link text-white" href="">INSTAGRAM</a></div>
+            <div class="p-2 ftext"><img src="img/icons/gplus.png" class="footer-icon" alt="facebook icon">&nbsp;<a class = "footer-link text-white" href="">GOOGLE+</a></div>
+            <div class="p-2 ftext"><img src="img/icons/tripad.png" class="footer-icon" alt="facebook icon">&nbsp;<a class = "footer-link text-white" href="">TRIPADVISOR</a></div>
+          </div>
+          <div class="d-flex flex-row">
+              <div class="p-2 ftext"><a class = "footer-link text-white" href="">ABOUT</a></div>
+              <div class="p-2 ftext"><a class = "footer-link text-white" href="">MEDIA</a></div>
+              <div class="p-2 ftext"><a class = "footer-link text-white" href="">CAREERS</a></div>
+              <div class="p-2 ftext"><a class = "footer-link text-white" href="">GLOBAL CONTACTS</a></div>
+              <div class="p-2 ftext"><a class = "footer-link text-white" href="">LEGALS & POLICIES</a></div>
+              <div class="p-2 ftext"><a class = "footer-link text-white" href="">CONTACT</a></div> 
+          </div>
+        </div>
+      </div>
+    </div>      
+  </footer>
+<!-- ------------------------------------footer--------------------------------------------------------------- -->
+
+
+
+<!-- BOOTSRAP JQUERY AND JS -->
+    <script src="jquery.js"></script>
+    <script src="popper.js"></script>
+    <script src="newbootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="formValidation.js"></script>
+</body>
+</html>
